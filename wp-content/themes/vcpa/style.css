@@ -108,7 +108,7 @@ input[type="search"] {
 
 body {
 	color: #222;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: Roboto, sans-serif;
 	font-size: 20px;
 	-webkit-font-smoothing: antialiased;
 	font-weight: 400;
@@ -207,7 +207,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: Lobster, sans-serif;
 	font-weight: 600;
 	line-height: 1.2;
 	margin: 0 0 10px;
@@ -572,7 +572,7 @@ th:first-child {
 .genesis-nav-menu {
 	clear: both;
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1;
 	width: 100%;
 }
