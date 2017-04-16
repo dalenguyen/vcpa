@@ -32,6 +32,11 @@ Text Domain: vcpa
 - Structure & Layouts
 
 - Site Navigation
+- Site Header
+- Footer Widgets
+- Site Footer
+- Front Page
+- Plugins
 */
 
 /* # HTML5 Reset
@@ -530,7 +535,6 @@ th:first-child {
 .site-header,
 .site-inner,
 .site-footer {
-  border: 1px solid #000;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -671,6 +675,13 @@ th:first-child {
 
 /* ## Site Header Navigation
 --------------------------------------------- */
+.site-header .sub-menu {
+  border-top: 1px solid #eee;
+}
+
+.site-header .sub-menu .sub-menu {
+  margin-top: -56px;
+}
 
 .site-header .genesis-nav-menu li li {
 	margin-left: 0;
@@ -680,14 +691,108 @@ th:first-child {
 --------------------------------------------- */
 
 .nav-primary {
-	background-color: #ddd;
+	background-color: #333;
 	border-top: 1px solid #eee;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* ## Footer Navigation
+.nav-primary .genesis-nav-menu a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+.nav-primary .genesis-nav-menu a:hover,
+.nav-primary .genesis-nav-menu a:focus,
+.nav-primary .genesis-nav-menu .current-menu-item > a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.nav-primary .genesis-nav-menu .sub-menu a {
+	color: #333;
+}
+
+.nav-primary .genesis-nav-menu .sub-menu a:hover,
+.nav-primary .genesis-nav-menu .sub-menu a:focus,
+.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a {
+	color: #c3251d;
+	text-decoration: underline;
+}
+
+/* ## Site Header
 --------------------------------------------- */
+
+.site-header .wrap {
+	padding: 40px 0;
+}
+
+.title-area {
+	float: left;
+	width: 30%;
+}
+
+.header-widget-area {
+	float: right;
+	width: 70%;
+}
+
+.site-title {
+	font-family: Lobster, sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 1.2;
+	margin: 0 0 10px;
+}
+
+.site-description {
+	margin-bottom: 0;
+}
+
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.footer-widgets .wrap {
+	background-color: #333;
+	color: #fff;
+	margin: 40px auto 0;
+	padding: 20px;
+	width: 1200px;
+}
+
+.footer-widgets .widgettitle {
+	color: #fff;
+}
+
+.footer-widgets a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.footer-widgets .widget-area {
+	float: left;
+	padding-right: 5%;
+	width: 30%;
+}
+
+.footer-widgets .footer-widgets-3 {
+	padding-right: 0;
+}
+
+.footer-widgets .search-form input[type="submit"] {
+	margin-top: 10px;
+	width: 100%;
+  background-color: #c3251d;
+}
+
+/* ## Site Footer
+--------------------------------------------- */
+
+.site-footer {
+	font-size: 14px;
+	margin-top: 40px;
+	text-align: center;
+}
 
 .site-footer .genesis-nav-menu {
 	padding-bottom: 20px;
@@ -695,4 +800,76 @@ th:first-child {
 
 .site-footer .genesis-nav-menu a {
 	padding: 0 20px 10px;
+}
+
+/* # Front Page
+---------------------------------------------------------------------------------------------------- */
+
+.home-welcome .wrap {
+	background: url(images/tea.jpg) no-repeat;
+	font-size: 24px;
+	margin: 0 auto;
+	min-height: 350px;
+	max-width: 1200px;
+	padding: 40px 100px 0;
+	text-align: center;
+}
+
+.home-welcome h3 {
+	font-size: 64px;
+}
+
+.call-to-action .wrap {
+	margin: 0 auto;
+	padding: 40px;
+	text-align: left;
+	max-width: 1200px;
+}
+
+.call-to-action .enews .widget-title,
+.call-to-action .enews p {
+	clear: left;
+	float: left;
+	margin-bottom: 0;
+	text-align: left;
+	width: 35%;
+}
+
+.call-to-action .enews form {
+    float: right;
+    text-align: right;
+    width: 60%;
+}
+
+.call-to-action .enews input[type="email"] {
+	height: 57px;
+	margin-right: 3px;
+	position: relative;
+	top: -2px;
+	width: 60%;
+}
+
+.call-to-action .enews-widget input[type="submit"] {
+	float: right;
+	margin: -2px 0 0;
+	width: 35%;
+}
+
+/* # Plugins
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Genesis Enews Extended
+--------------------------------------------- */
+
+.sidebar .enews input[type="submit"] {
+	margin-top: 10px;
+	width: 100%;
+}
+
+/* ## Simple Social Icons
+--------------------------------------------- */
+
+.simple-social-icons {
+	float: right;
+	margin-top: 20px;
 }

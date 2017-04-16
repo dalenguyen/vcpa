@@ -40,6 +40,11 @@ function vcpa_home_page_setup(){
     add_action('genesis_after_header', 'vcpa_add_call_to_action');
   }
 
+  // Force full-width-content layout settings.
+  add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+
+  // Remove posts.
+  remove_action('genesis_loop', 'genesis_do_loop');
 }
 
 /**
