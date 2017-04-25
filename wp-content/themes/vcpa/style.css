@@ -1225,6 +1225,7 @@ img.alignright,
 /* ## Primary Navigation
 --------------------------------------------- */
 .nav-primary {
+  display: none;
   background-color: #333; }
 
 .nav-primary .genesis-nav-menu a {
