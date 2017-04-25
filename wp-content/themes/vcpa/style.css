@@ -53,8 +53,8 @@ Text Domain: vcpa
 - Site Navigation
 	- Header Navigation
 	- Primary Navigation
-	- Secondary Navigation
-
+	- Sticky Navigation
+	
 - Content Area
 	- Entries
 	- Entry Meta
@@ -483,7 +483,7 @@ input[type="search"] {
 ---------------------------------------------------------------------------------------------------- */
 x
 body {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   color: #333;
   font-family: Lato, sans-serif;
   font-size: 18px;
@@ -1080,11 +1080,12 @@ img.alignright,
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
-  background-color: #fff;
-  min-height: 160px; }
+  background-color: rgba(255, 255, 255, 0.9);
+  min-height: 160px;
+  width: 100%; }
 
 .site-header .wrap {
-  padding: 40px 0; }
+  padding: 20px 0; }
 
 /* ## Title Area
 --------------------------------------------- */
@@ -1150,7 +1151,7 @@ img.alignright,
 .genesis-nav-menu a:hover,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-  color: #333; }
+  color: #2b9b9b; }
 
 .genesis-nav-menu .sub-menu {
   left: -9999px;
@@ -1172,7 +1173,7 @@ img.alignright,
   z-index: 99; }
 
 .genesis-nav-menu .sub-menu a {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid #ddd;
   border-top: none;
   font-size: 14px;
@@ -1239,10 +1240,18 @@ img.alignright,
 .nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
   color: #477dca; }
 
-/* ## Secondary Navigation
+/* ## Sticky Navigaiton
 --------------------------------------------- */
-.nav-secondary {
-  background-color: #fff; }
+.nav-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  width: 100%; }
+
+.nav-fixed {
+  position: relative;
+  box-shadow: none; }
 
 /* # Content Area
 ---------------------------------------------------------------------------------------------------- */
@@ -1324,7 +1333,7 @@ p.entry-meta {
 .comment-respond,
 .entry-comments,
 .entry-pings {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   margin-bottom: 40px; }
 
 .comment-respond,
@@ -1338,7 +1347,7 @@ p.entry-meta {
   font-size: 16px; }
 
 li.comment {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   border: 2px solid #ddd;
   border-right: none; }
 
@@ -1368,7 +1377,7 @@ li.comment {
   display: none; }
 
 .form-allowed-tags {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   font-size: 16px;
   padding: 24px; }
 
@@ -1479,7 +1488,7 @@ li.comment {
     text-align: left; }
 
   .genesis-nav-menu a {
-    padding: 28px 24px; }
+    padding: 28px 10px; }
 
   .genesis-nav-menu > .first > a {
     padding-left: 0; }

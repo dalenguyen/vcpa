@@ -68,3 +68,10 @@ function vcpa_enqueue_styles(){
     'google-fonts',
     '//fonts.googleapis.com/css?family=Lobster|Roboto:400,400i,700,700i&amp;subset=vietnamese');
 }
+
+// Add sticky menu script
+add_action( 'wp_enqueue_scripts', 'vcpa_sticky_scroll' );
+
+function vcpa_sticky_scroll() {
+    wp_enqueue_script( 'follow', get_stylesheet_directory_uri() . '/js/vcpa-sticky-scroll.js', array( 'jquery' ), '', true );
+}

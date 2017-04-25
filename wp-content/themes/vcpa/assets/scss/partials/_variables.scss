@@ -6,9 +6,10 @@ $gray-light: #ddd;
 $red-light: #fbe3e4;
 $yellow-light: #fff6bf;
 $green-light: #e6efc2;
+$green-dark: #2b9b9b;
 
 // Background Color
-$color-background: #fff;
+$color-background: rgba(255, 255, 255, 0.9);
 $color-background-dark: $gray-dark;
 $color-background-light: $gray-light;
 $color-background-button-dark: $gray-dark;
@@ -16,6 +17,7 @@ $color-background-button-light: $gray-light;
 
 // Font Colors
 $color-text: $gray-dark;
+$color-text-hover: $green-dark;
 $color-text-dark: $gray-dark;
 $color-text-light: $gray-light;
 $color-text-accent: $blue;
