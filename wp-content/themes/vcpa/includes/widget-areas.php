@@ -12,9 +12,9 @@
 
 // Register after post widget area
 genesis_register_sidebar( array(
-  'id'		=> 'home-welcome',
-  'name'		=> __( 'Home Welcome', 'vcpa' ),
-  'description'	=> __( 'This is the home widget area that will show on the front page', 'vcpa' ),
+  'id'		=> 'first-home-feature',
+  'name'		=> __( 'First Home Feature', 'vcpa' ),
+  'description'	=> __( 'This is the first home feature widget area that will show on the front page', 'vcpa' ),
 ) );
 
 genesis_register_sidebar( array(

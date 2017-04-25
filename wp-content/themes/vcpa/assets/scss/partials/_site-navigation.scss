@@ -38,7 +38,7 @@
 	background-color: $color-background;
 	border: 1px solid $color-border-light;
 	border-top: none;
-	font-size: 14px;
+	font-size: 13px;
 	padding: 20px;
 	position: relative;
 	width: 200px;
@@ -89,6 +89,7 @@
 
 .site-header .sub-menu {
 	border-top: 1px solid $color-border-light;
+	top: 60px;
 }
 
 .site-header .sub-menu .sub-menu {
@@ -121,18 +122,39 @@
 	color: $color-link;
 }
 
-/* ## Sticky Navigaiton
+/* ## Header Navigation
 --------------------------------------------- */
 
-.nav-sticky {
-	position: fixed;
-	top:0;
-	left:0;
-	box-shadow:0 1px 2px rgba(0, 0, 0, 0.15);
-	width: 100%;
+.nav-header {
+	float: right;
 }
 
-.nav-fixed {
+.nav-header > ul > li {
+	float: left;
 	position: relative;
-	box-shadow: none;
+	display: inline-block;
+}
+
+.nav-header > ul > li:after {
+	content: '';
+  border-right: 1px solid #ddd;
+  position: absolute;
+  height: 40%;
+  right: 0;
+  top: 32%;
+}
+
+.nav-header > ul > li:last-child:after {
+	border-right: none;
+}
+
+.nav-header a {
+	font-family: 'Roboto', sans-serif;
+	color: $gray-dark;
+	display: block;
+	float: left;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: normal;
+	padding: 24px 20px;
 }

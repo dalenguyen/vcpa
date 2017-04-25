@@ -1,7 +1,8 @@
 .site-header {
 	background-color: $color-background;
-	min-height: 160px;
+	min-height: 100px;
 	width: 100%;
+	z-index: 999;
 }
 
 .site-header .wrap {

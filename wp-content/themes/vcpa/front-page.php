@@ -16,12 +16,12 @@ add_action('genesis_meta', 'vcpa_home_page_setup');
  * Set up the homepage layout by conditionally loading sections when widgets
  * are active.
  *
- * @since 1.0.0
+ * @since 2.0.0
  */
 function vcpa_home_page_setup(){
 
   $home_sidebars = array(
-    'home_welcome'    => is_active_sidebar('home-welcome'),
+    'first_home_feature'    => is_active_sidebar('first-home-feature'),
     'call_to_action'  => is_active_sidebar('call-to-action')
   );
 
@@ -30,9 +30,9 @@ function vcpa_home_page_setup(){
     return;
   }
 
-  // Add home welcome area if "Home Welcome" widget is active
-  if ( $home_sidebars['home_welcome'] ) {
-    add_action('genesis_after_header', 'vcpa_add_home_welcome');
+  // Add home welcome area if "First Home Feature" widget is active
+  if ( $home_sidebars['first_home_feature'] ) {
+    add_action('genesis_after_header', 'vcpa_add_first_home_feature');
   }
 
   // Add home welcome area if "Call to Action" widget is active
@@ -48,17 +48,17 @@ function vcpa_home_page_setup(){
 }
 
 /**
- *  Display content for the "Home Welcome" section.
+ *  Display content for the "First Home Feature" section.
  *
  * @since 1.0.0
  */
 
-function vcpa_add_home_welcome() {
+function vcpa_add_first_home_feature() {
 
-  // look for widget id 'home-welcome' and display it.
-  genesis_widget_area('home-welcome',
+  // look for widget id 'first-home-feature' and display it.
+  genesis_widget_area('first-home-feature',
     array(
-      'before'  => '<div class="home-welcome"><div class="wrap">',
+      'before'  => '<div class="first-home-feature"><div class="wrap">',
       'after'   => '</div></div>'
     )
   );

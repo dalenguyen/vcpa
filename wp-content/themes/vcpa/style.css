@@ -53,8 +53,8 @@ Text Domain: vcpa
 - Site Navigation
 	- Header Navigation
 	- Primary Navigation
-	- Sticky Navigation
-	
+	- Header Navigation
+
 - Content Area
 	- Entries
 	- Entry Meta
@@ -484,7 +484,7 @@ input[type="search"] {
 x
 body {
   background-color: rgba(255, 255, 255, 0.9);
-  color: #333;
+  color: #666;
   font-family: Lato, sans-serif;
   font-size: 18px;
   font-weight: 300;
@@ -515,7 +515,7 @@ textarea:focus,
 
 ::-moz-selection,
 ::selection {
-  background-color: #333;
+  background-color: #666;
   color: #ddd; }
 
 a {
@@ -567,7 +567,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333;
+  color: #666;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 400;
   line-height: 1.2;
@@ -657,7 +657,7 @@ select,
 textarea {
   background-color: #ddd;
   border: 1px solid #ddd;
-  color: #333;
+  color: #666;
   font-size: 18px;
   font-weight: 300;
   padding: 16px;
@@ -674,12 +674,12 @@ input[type="radio"] {
   width: auto; }
 
 ::-moz-placeholder {
-  color: #333;
+  color: #666;
   font-weight: 300;
   opacity: 1; }
 
 ::-webkit-input-placeholder {
-  color: #333;
+  color: #666;
   font-weight: 300; }
 
 button,
@@ -687,7 +687,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button {
-  background-color: #333;
+  background-color: #666;
   border: none;
   color: #ddd;
   cursor: pointer;
@@ -710,7 +710,7 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover {
-  background-color: #333;
+  background-color: #666;
   color: #ddd; }
 
 .entry-content .button:hover {
@@ -722,7 +722,7 @@ input:hover[type="submit"],
 .footer-widgets input:hover[type="submit"],
 .footer-widgets .button:hover {
   background-color: #ddd;
-  color: #333; }
+  color: #666; }
 
 .button {
   display: inline-block; }
@@ -1035,7 +1035,7 @@ img.alignright,
   padding: 0 0 24px; }
 
 .footer-widgets .entry {
-  border-bottom: 1px dotted #333; }
+  border-bottom: 1px dotted #666; }
 
 .featured-content .entry-title {
   font-size: 20px; }
@@ -1049,11 +1049,11 @@ img.alignright,
   color: #ddd; }
 
 .sidebar .widget.enews-widget {
-  background-color: #333; }
+  background-color: #666; }
 
 .enews-widget input,
 .enews-widget input:focus {
-  border: 1px solid #333; }
+  border: 1px solid #666; }
 
 .enews-widget input {
   font-size: 16px;
@@ -1067,7 +1067,7 @@ img.alignright,
 
 .enews-widget input:hover[type="submit"] {
   background-color: #ddd;
-  color: #333; }
+  color: #666; }
 
 .enews form + p {
   margin-top: 24px; }
@@ -1081,8 +1081,9 @@ img.alignright,
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
   background-color: rgba(255, 255, 255, 0.9);
-  min-height: 160px;
-  width: 100%; }
+  min-height: 100px;
+  width: 100%;
+  z-index: 999; }
 
 .site-header .wrap {
   padding: 20px 0 0 0; }
@@ -1143,7 +1144,7 @@ img.alignright,
   text-align: left; }
 
 .genesis-nav-menu a {
-  color: #333;
+  color: #666;
   display: block;
   padding: 30px 24px; }
 
@@ -1175,7 +1176,7 @@ img.alignright,
   background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid #ddd;
   border-top: none;
-  font-size: 14px;
+  font-size: 13px;
   padding: 20px;
   position: relative;
   width: 200px; }
@@ -1214,7 +1215,8 @@ img.alignright,
 /* ## Site Header Navigation
 --------------------------------------------- */
 .site-header .sub-menu {
-  border-top: 1px solid #ddd; }
+  border-top: 1px solid #ddd;
+  top: 60px; }
 
 .site-header .sub-menu .sub-menu {
   margin-top: -56px; }
@@ -1226,31 +1228,49 @@ img.alignright,
 --------------------------------------------- */
 .nav-primary {
   display: none;
-  background-color: #333; }
+  background-color: #666; }
 
 .nav-primary .genesis-nav-menu a {
   color: #ddd; }
 
 .nav-primary .genesis-nav-menu .sub-menu a {
-  color: #333; }
+  color: #666; }
 
 .nav-primary .genesis-nav-menu a:hover,
 .nav-primary .genesis-nav-menu .current-menu-item > a,
 .nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
   color: #477dca; }
 
-/* ## Sticky Navigaiton
+/* ## Header Navigation
 --------------------------------------------- */
-.nav-sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-  width: 100%; }
+.nav-header {
+  float: right; }
 
-.nav-fixed {
+.nav-header > ul > li {
+  float: left;
   position: relative;
-  box-shadow: none; }
+  display: inline-block; }
+
+.nav-header > ul > li:after {
+  content: '';
+  border-right: 1px solid #ddd;
+  position: absolute;
+  height: 40%;
+  right: 0;
+  top: 32%; }
+
+.nav-header > ul > li:last-child:after {
+  border-right: none; }
+
+.nav-header a {
+  font-family: 'Roboto', sans-serif;
+  color: #666;
+  display: block;
+  float: left;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 24px 20px; }
 
 /* # Content Area
 ---------------------------------------------------------------------------------------------------- */
@@ -1279,7 +1299,7 @@ img.alignright,
   margin-bottom: 0; }
 
 .entry-content code {
-  background-color: #333;
+  background-color: #666;
   color: #ddd; }
 
 /* ## Entry Meta
@@ -1316,7 +1336,7 @@ p.entry-meta {
   display: inline; }
 
 .archive-pagination li a {
-  background-color: #333;
+  background-color: #666;
   color: #ddd;
   cursor: pointer;
   display: inline-block;
@@ -1399,13 +1419,13 @@ li.comment {
   margin-bottom: 0; }
 
 .sidebar .widget {
-  background-color: #333;
+  background-color: #666;
   padding: 40px; }
 
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 .footer-widgets {
-  background-color: #333;
+  background-color: #666;
   clear: both;
   padding-top: 40px; }
 
@@ -1414,7 +1434,7 @@ li.comment {
   color: #477dca; }
 
 .footer-widgets input {
-  border: 1px solid #333; }
+  border: 1px solid #666; }
 
 .footer-widgets a.button,
 .footer-widgets a:hover {
