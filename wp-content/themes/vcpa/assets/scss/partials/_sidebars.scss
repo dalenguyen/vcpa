@@ -1,0 +1,24 @@
+.sidebar {
+	color: $color-text-light;
+	font-size: 16px;
+}
+
+.sidebar .widgettitle {
+	color: $color-text-light;
+}
+
+.sidebar li {
+	border-bottom: 1px dotted $color-border-light;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.sidebar p:last-child,
+.sidebar ul > li:last-child {
+	margin-bottom: 0;
+}
+
+.sidebar .widget {
+	background-color: $color-background-dark;
+	padding: 40px;
+}

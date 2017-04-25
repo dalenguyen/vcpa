@@ -27,7 +27,7 @@ function vcpa_setup() {
   // Define theme constants
   define('CHILD_THEME_NAME', 'Vcpa');
   define('CHILD_THEME_URL', 'https://github.com/dalenguyen/vcpa');
-  define('CHILD_THEME_VERSION', '1.0.0');
+  define('CHILD_THEME_VERSION', '2.0.0');
 
   // Add HTML5 markup structure.
 	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption'  ) );
