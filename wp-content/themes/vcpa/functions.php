@@ -60,6 +60,14 @@ function vcpa_setup() {
   include_once(get_stylesheet_directory().'/includes/widget-areas.php');
 }
 
+// Add support for custom header
+add_theme_support( 'custom-header', array(
+	'width'			=> 200,
+	'height'		=> 52,
+	'header-selector'	=> '.site-header .title-area',
+	'header-text'		=> false
+) );
+
 // Add Google Font stylesheet.
 add_action('wp_enqueue_scripts', 'vcpa_enqueue_styles');
 function vcpa_enqueue_styles(){

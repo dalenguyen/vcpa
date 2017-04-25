@@ -1085,7 +1085,7 @@ img.alignright,
   width: 100%; }
 
 .site-header .wrap {
-  padding: 20px 0; }
+  padding: 20px 0 0 0; }
 
 /* ## Title Area
 --------------------------------------------- */
@@ -1105,7 +1105,6 @@ img.alignright,
   color: #333; }
 
 .header-image .site-title > a {
-  background: url(images/logo.png) no-repeat left;
   float: left;
   min-height: 60px;
   width: 100%; }
@@ -1468,7 +1467,7 @@ li.comment {
     background-position: left top; }
 
   .header-image .site-header .widget-area {
-    padding: 40px 0; }
+    padding: 10px 0; }
 
   .site-header .search-form {
     float: right;
@@ -1488,7 +1487,7 @@ li.comment {
     text-align: left; }
 
   .genesis-nav-menu a {
-    padding: 28px 10px; }
+    padding: 10px 10px; }
 
   .genesis-nav-menu > .first > a {
     padding-left: 0; }

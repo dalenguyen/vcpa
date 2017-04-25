@@ -39,6 +39,7 @@ Thumbs.db
 *.exe
 *.o
 *.so
+*.css.map
 
 # ignore packaged files
 *.7z
@@ -66,6 +67,10 @@ wp-content/plugins/hello.php
 wp-content/themes/twenty*/
 wp-content/themes/arise/
 wp-content/themes/in-the-beginning-master/
+
+# ignore map css type
+
+wp-content/themes/vcpa/style.css.map
 
 # ignore node/grunt dependency directories
 node_modules/
