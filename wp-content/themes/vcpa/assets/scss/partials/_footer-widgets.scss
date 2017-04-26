@@ -1,5 +1,5 @@
 .footer-widgets {
-	background-color: $color-background-dark;
+	background-color: $color-background-light;
 	clear: both;
 	padding-top: 40px;
 }
@@ -15,7 +15,7 @@
 
 .footer-widgets a.button,
 .footer-widgets a:hover {
-	color: $color-link;
+	color: $color-link-hover;
 }
 
 .footer-widgets li {

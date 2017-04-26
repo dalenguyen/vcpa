@@ -520,11 +520,11 @@ textarea:focus,
   color: #ddd; }
 
 a {
-  color: #477dca;
+  color: #0b5394;
   text-decoration: none; }
 
 a:hover {
-  color: #2c5999; }
+  color: #062b4d; }
 
 p {
   margin: 0 0 28px;
@@ -703,7 +703,7 @@ input[type="submit"],
 .footer-widgets input[type="reset"],
 .footer-widgets input[type="submit"],
 .footer-widgets .button {
-  background-color: #477dca;
+  background-color: #0b5394;
   color: #ddd; }
 
 button:hover,
@@ -944,10 +944,10 @@ th {
 
 .entry-title a,
 .sidebar .widget-title a {
-  color: #477dca; }
+  color: #0b5394; }
 
 .entry-title a:hover {
-  color: #2c5999; }
+  color: #062b4d; }
 
 .widget-title {
   font-size: 18px;
@@ -1061,7 +1061,7 @@ img.alignright,
   margin-bottom: 16px; }
 
 .enews-widget input[type="submit"] {
-  background-color: #477dca;
+  background-color: #0b5394;
   color: #ddd;
   margin: 0;
   width: 100%; }
@@ -1149,7 +1149,7 @@ img.alignright,
   .genesis-nav-menu a:hover,
   .genesis-nav-menu .current-menu-item > a,
   .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-    color: #2b9b9b; }
+    color: #4a86e8; }
   .genesis-nav-menu .sub-menu {
     left: -9999px;
     opacity: 0;
@@ -1235,7 +1235,7 @@ img.alignright,
 .nav-primary .genesis-nav-menu a:hover,
 .nav-primary .genesis-nav-menu .current-menu-item > a,
 .nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-  color: #477dca; }
+  color: #0b5394; }
 
 /* ## Header Navigation
 --------------------------------------------- */
@@ -1272,7 +1272,7 @@ img.alignright,
 .line-one,
 .line-two,
 .line-three {
-  background-color: #2b9b9b; }
+  background-color: #0b5394; }
 
 /* # Content Area
 ---------------------------------------------------------------------------------------------------- */
@@ -1347,7 +1347,7 @@ p.entry-meta {
 
 .archive-pagination li a:hover,
 .archive-pagination .active a {
-  background-color: #477dca; }
+  background-color: #0b5394; }
 
 /* ## Comments
 --------------------------------------------- */
@@ -1427,20 +1427,20 @@ li.comment {
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 .footer-widgets {
-  background-color: #333;
+  background-color: #ddd;
   clear: both;
   padding-top: 40px; }
 
 .footer-widgets,
 .footer-widgets a {
-  color: #477dca; }
+  color: #0b5394; }
 
 .footer-widgets input {
   border: 1px solid #333; }
 
 .footer-widgets a.button,
 .footer-widgets a:hover {
-  color: #477dca; }
+  color: #062b4d; }
 
 .footer-widgets li {
   border-bottom: 1px dotted #ddd;
