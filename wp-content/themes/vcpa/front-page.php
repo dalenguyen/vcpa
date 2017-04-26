@@ -35,7 +35,7 @@ function vcpa_home_page_setup(){
     add_action('genesis_after_header', 'vcpa_add_first_home_feature');
   }
 
-  // Add home welcome area if "Call to Action" widget is active
+  // Add first home feature area if "Call to Action" widget is active
   if ( $home_sidebars['call_to_action'] ) {
     add_action('genesis_after_header', 'vcpa_add_call_to_action');
   }

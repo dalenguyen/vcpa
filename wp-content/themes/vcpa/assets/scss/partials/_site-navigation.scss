@@ -1,47 +1,47 @@
 .genesis-nav-menu {
 	clear: both;
-	font-size: 16px;
+	font-size: 13px;
 	line-height: 1;
 	width: 100%;
-}
 
-.genesis-nav-menu .menu-item {
-	display: inline-block;
-	text-align: left;
-}
+	.menu-item{
+		display: inline-block;
+		text-align: left;
+	}
 
-.genesis-nav-menu a {
-	color: $color-text;
-	display: block;
-	padding: 30px 24px;
-}
+	a {
+		color: $color-text;
+		display: block;
+		padding: 30px 24px;
+	}
 
-.genesis-nav-menu a:hover,
-.genesis-nav-menu .current-menu-item > a,
-.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: $color-text-hover;
-}
+	a:hover,
+	.current-menu-item > a,
+	.sub-menu .current-menu-item > a:hover {
+		color: $color-text-hover;
+	}
 
-.genesis-nav-menu .sub-menu {
-	left: -9999px;
-	opacity: 0;
-	position: absolute;
-	@include transition-property (transform);
-	@include transition-duration(0.4s);
-	@include transition-timing-function(ease-in-out);
-	@include transition-delay(0s);
-	width: 200px;
-	z-index: 99;
-}
+	.sub-menu {
+		left: -9999px;
+		opacity: 0;
+		position: absolute;
+		@include transition-property (transform);
+		@include transition-duration(0.4s);
+		@include transition-timing-function(ease-in-out);
+		@include transition-delay(0s);
+		width: 200px;
+		z-index: 99;
 
-.genesis-nav-menu .sub-menu a {
-	background-color: $color-background;
-	border: 1px solid $color-border-light;
-	border-top: none;
-	font-size: 13px;
-	padding: 20px;
-	position: relative;
-	width: 200px;
+		a {
+			background-color: $color-background;
+			border: 1px solid $color-border-light;
+			border-top: none;
+			font-size: 13px;
+			padding: 20px;
+			position: relative;
+			width: 200px;
+		}
+	}
 }
 
 .genesis-nav-menu .sub-menu .sub-menu {
@@ -127,34 +127,36 @@
 
 .nav-header {
 	float: right;
-}
 
-.nav-header > ul > li {
-	float: left;
-	position: relative;
-	display: inline-block;
-}
+	ul {
+		li {
+			float: left;
+			position: relative;
+			display: inline-block;
+			&:after {
+				content: '';
+			  border-right: 1px solid #ddd;
+			  position: absolute;
+			  height: 40%;
+			  right: 0;
+			  top: 32%;
+			}
+		}
+		li:last-child{
+			&:after {
+				border-right: none;
+			}
+		}
+	}
 
-.nav-header > ul > li:after {
-	content: '';
-  border-right: 1px solid #ddd;
-  position: absolute;
-  height: 40%;
-  right: 0;
-  top: 32%;
-}
-
-.nav-header > ul > li:last-child:after {
-	border-right: none;
-}
-
-.nav-header a {
-	font-family: 'Roboto', sans-serif;
-	color: $gray-dark;
-	display: block;
-	float: left;
-	font-size: 13px;
-	text-transform: uppercase;
-	font-weight: normal;
-	padding: 24px 20px;
+	a {
+		font-family: 'Roboto', sans-serif;
+		color: $gray-dark-nav;
+		display: block;
+		float: left;
+		font-size: 13px;
+		text-transform: uppercase;
+		font-weight: normal;
+		padding: 24px 20px;
+	}
 }
