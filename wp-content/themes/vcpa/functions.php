@@ -68,6 +68,17 @@ add_theme_support( 'custom-header', array(
 	'header-text'		=> false
 ) );
 
+// Add toggle menu
+function add_toggle_menu() {
+    echo '<div class="menu-toggle">
+      			<div class="line-one"></div>
+      			<div class="line-two"></div>
+      			<div class="line-three"></div>
+      		</div>';
+};
+
+add_action('genesis_site_title', 'add_toggle_menu');
+
 // Add Google Font stylesheet.
 add_action('wp_enqueue_scripts', 'vcpa_enqueue_styles');
 function vcpa_enqueue_styles(){
@@ -78,8 +89,15 @@ function vcpa_enqueue_styles(){
 }
 
 // Add sticky menu script
+add_action( 'wp_enqueue_scripts', 'vcpa_main' );
+
+function vcpa_main() {
+    wp_enqueue_script( 'vcpa-main', get_stylesheet_directory_uri() . '/js/vcpa-main.js', array( 'jquery' ), '', true );
+}
+
+// Add sticky menu script
 add_action( 'wp_enqueue_scripts', 'vcpa_sticky_scroll' );
 
 function vcpa_sticky_scroll() {
-    wp_enqueue_script( 'follow', get_stylesheet_directory_uri() . '/js/vcpa-sticky-scroll.js', array( 'jquery' ), '', true );
+    wp_enqueue_script( 'sticky-menu', get_stylesheet_directory_uri() . '/js/vcpa-sticky-scroll.js', array( 'jquery' ), '', true );
 }
