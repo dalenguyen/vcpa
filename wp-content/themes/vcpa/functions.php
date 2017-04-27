@@ -60,14 +60,6 @@ function vcpa_setup() {
   include_once(get_stylesheet_directory().'/includes/widget-areas.php');
 }
 
-// Add support for custom header
-add_theme_support( 'custom-header', array(
-	'width'			=> 200,
-	'height'		=> 52,
-	'header-selector'	=> '.site-header .title-area',
-	'header-text'		=> false
-) );
-
 // Add toggle menu
 function add_toggle_menu() {
     echo '<div class="menu-toggle">

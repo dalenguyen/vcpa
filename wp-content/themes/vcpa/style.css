@@ -1082,42 +1082,37 @@ img.alignright,
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
   background-color: rgba(255, 255, 255, 0.9);
-  min-height: 100px;
+  min-height: 75px;
   width: 100%;
   z-index: 999; }
-
-.site-header .wrap {
-  padding: 20px 0 0 0; }
+  .site-header .wrap {
+    padding: 20px 0 0 0; }
 
 /* ## Title Area
 --------------------------------------------- */
 .title-area {
   float: left;
-  padding: 10px 0;
   text-align: center;
   width: 100%; }
 
 .site-title {
   font-size: 32px;
   font-weight: 400;
-  line-height: 1.2; }
-
-.site-title a,
-.site-title a:hover {
-  color: #333; }
+  line-height: 1.2;
+  margin-bottom: 0; }
+  .site-title a, .site-title a:hover {
+    color: #333; }
 
 .header-image .site-title > a {
+  background: url(images/logo.png) no-repeat left;
+  background-size: contain;
   float: left;
-  min-height: 60px;
   width: 100%; }
 
 .site-description {
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.5; }
-
-.site-description,
-.site-title {
+  line-height: 1.5;
   margin-bottom: 0; }
 
 .header-image .site-description,
@@ -1212,7 +1207,7 @@ img.alignright,
 --------------------------------------------- */
 .site-header .sub-menu {
   border-top: 1px solid #ddd;
-  top: 60px; }
+  top: 50px; }
 
 .site-header .sub-menu .sub-menu {
   margin-top: -56px; }
@@ -1488,9 +1483,6 @@ li.comment {
   .header-image .site-header .wrap {
     background-position: left top; }
 
-  .header-image .site-header .widget-area {
-    padding: 10px 0; }
-
   .site-header .search-form {
     float: right;
     padding: 10px; }
@@ -1658,6 +1650,12 @@ li.comment {
 ================================================== */
 @media only screen and (max-width: 767px) {
   /* ----- Responsive Navigation ----- */
+  .site-container {
+    margin: 0 10px; }
+
+  .header-image .site-title > a {
+    width: 60%; }
+
   .menu-toggle {
     display: block;
     background-color: transparent;
@@ -1700,7 +1698,8 @@ li.comment {
     display: none; }
 
   .toggled-on .menu {
-    display: block; }
+    display: block;
+    margin-top: 15px; }
 
   .nav-header {
     float: none; }

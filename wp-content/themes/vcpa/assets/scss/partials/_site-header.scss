@@ -1,12 +1,12 @@
 .site-header {
 	background-color: $color-background;
-	min-height: 100px;
+	min-height: 75px;
 	width: 100%;
 	z-index: 999;
-}
 
-.site-header .wrap {
-	padding: 20px 0 0 0;
+	.wrap {
+		padding: 20px 0 0 0;
+	}
 }
 
 /* ## Title Area
@@ -14,7 +14,6 @@
 
 .title-area {
 	float: left;
-	padding: 10px 0;
 	text-align: center;
 	width: 100%;
 }
@@ -23,18 +22,17 @@
 	font-size: 32px;
 	font-weight: 400;
 	line-height: 1.2;
-}
+	margin-bottom: 0;
 
-.site-title a,
-.site-title a:hover {
-	color: #333;
+	a, a:hover {
+		color: $gray-dark;
+	}
 }
 
 .header-image .site-title > a {
-	// background: url(images/logo.png) no-repeat left;
-	// background-position: top center !important;
+	background: url(images/logo.png) no-repeat left;
+	background-size: contain;
 	float: left;
-	min-height: 60px;
 	width: 100%;
 }
 
@@ -42,10 +40,6 @@
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 1.5;
-}
-
-.site-description,
-.site-title {
 	margin-bottom: 0;
 }
 

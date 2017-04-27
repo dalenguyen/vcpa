@@ -13,7 +13,7 @@
 	}
 
 	.header-image .site-header .widget-area {
-		padding: 10px 0;
+		// padding: 10px 0;
 	}
 
 	.site-header .search-form {
@@ -231,6 +231,14 @@
 @media only screen and (max-width: 767px) {
 
 	/* ----- Responsive Navigation ----- */
+	
+	.site-container {
+		margin: 0 10px;
+	}
+
+	.header-image .site-title > a {
+		width: 60%;
+	}
 
 	.menu-toggle {
 		display: block;
@@ -279,6 +287,7 @@
 
 	.toggled-on .menu {
 		display: block;
+		margin-top: 15px;
 	}
 	.nav-header {
 		float: none;
