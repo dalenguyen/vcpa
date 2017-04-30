@@ -32,6 +32,10 @@ Text Domain: vcpa
 	- Column Widths and Positions
 	- Column Classes
 
+- Style Front
+	- First Home Feature
+	- Second Home Feature
+
 - Common Classes
 	- Avatar
 	- Genesis
@@ -45,6 +49,7 @@ Text Domain: vcpa
 - Plugins
 	- Genesis eNews Extended
 	- Jetpack
+	- Meta Slider
 
 - Site Header
 	- Title Area
@@ -878,6 +883,28 @@ th {
   margin: 0;
   width: 100%; }
 
+/* # Widgets
+---------------------------------------------------------------------------------------------------- */
+.second-home-feature {
+  padding: 20px 0;
+  text-align: center; }
+  .second-home-feature .wrap {
+    background-color: #ddd; }
+  .second-home-feature .widget_text {
+    padding: 100px 70px; }
+  .second-home-feature h3 {
+    font-size: 25px;
+    line-height: 1.75; }
+  .second-home-feature p {
+    font-size: 16px; }
+
+@media only screen and (max-width: 600px) {
+  .second-home-feature .widget_text {
+    padding: 40px 20px; }
+  .second-home-feature h3 {
+    font-size: 18px; }
+  .second-home-feature p {
+    font-size: 13px; } }
 /* # Common Classes
 ---------------------------------------------------------------------------------------------------- */
 /* ## Avatar
@@ -1047,7 +1074,7 @@ img.alignright,
 --------------------------------------------- */
 .enews-widget,
 .enews-widget .widget-title {
-  color: #ddd; }
+  color: #0b5394; }
 
 .sidebar .widget.enews-widget {
   background-color: #333; }
@@ -1077,6 +1104,11 @@ img.alignright,
 --------------------------------------------- */
 #wpstats {
   display: none; }
+
+/* ## Meta Slider
+--------------------------------------------- */
+.metaslider h3 {
+  color: #827d7d; }
 
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */

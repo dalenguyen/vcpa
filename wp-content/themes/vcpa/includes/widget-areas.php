@@ -18,7 +18,7 @@ genesis_register_sidebar( array(
 ) );
 
 genesis_register_sidebar( array(
-  'id'		=> 'call-to-action',
-  'name'		=> __( 'Call To Action', 'vcpa' ),
-  'description'	=> __( 'This is the home widget area that will show on the front page', 'vcpa' ),
+  'id'		=> 'second-home-feature',
+  'name'		=> __( 'Second Home Feature', 'vcpa' ),
+  'description'	=> __( 'This is the second home feature widget area that will show on the front page', 'vcpa' ),
 ) );

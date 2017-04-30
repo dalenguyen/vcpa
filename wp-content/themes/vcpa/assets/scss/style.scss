@@ -33,6 +33,10 @@ Text Domain: vcpa
 	- Column Widths and Positions
 	- Column Classes
 
+- Style Front
+	- First Home Feature
+	- Second Home Feature
+
 - Common Classes
 	- Avatar
 	- Genesis
@@ -46,6 +50,7 @@ Text Domain: vcpa
 - Plugins
 	- Genesis eNews Extended
 	- Jetpack
+	- Meta Slider
 
 - Site Header
 	- Title Area
@@ -101,6 +106,11 @@ body.rtl {
 /* # Structure and Layout
 ---------------------------------------------------------------------------------------------------- */
 @import "partials/structure-layout";
+
+/* # Widgets
+---------------------------------------------------------------------------------------------------- */
+@import "partials/style-front";
+
 
 
 /* # Common Classes

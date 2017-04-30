@@ -22,7 +22,7 @@ function vcpa_home_page_setup(){
 
   $home_sidebars = array(
     'first_home_feature'    => is_active_sidebar('first-home-feature'),
-    'call_to_action'  => is_active_sidebar('call-to-action')
+    'second_home_feature'  => is_active_sidebar('second-home-feature')
   );
 
   // Return early if no sidebars are active
@@ -36,8 +36,8 @@ function vcpa_home_page_setup(){
   }
 
   // Add first home feature area if "Call to Action" widget is active
-  if ( $home_sidebars['call_to_action'] ) {
-    add_action('genesis_after_header', 'vcpa_add_call_to_action');
+  if ( $home_sidebars['second_home_feature'] ) {
+    add_action('genesis_after_header', 'vcpa_add_second_home_feature');
   }
 
   // Force full-width-content layout settings.
@@ -70,12 +70,12 @@ function vcpa_add_first_home_feature() {
  * @since 1.0.0
  */
 
-function vcpa_add_call_to_action() {
+function vcpa_add_second_home_feature() {
 
-  // look for widget id 'call-to-action' and display it.
-  genesis_widget_area('call-to-action',
+  // look for widget id 'second-home-feature' and display it.
+  genesis_widget_area('second-home-feature',
     array(
-      'before'  => '<div class="call-to-action"><div class="wrap">',
+      'before'  => '<div class="second-home-feature"><div class="wrap">',
       'after'   => '</div></div>'
     )
   );

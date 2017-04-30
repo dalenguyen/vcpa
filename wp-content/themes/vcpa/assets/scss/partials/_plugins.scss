@@ -3,7 +3,7 @@
 
 .enews-widget,
 .enews-widget .widget-title {
-	color: $color-text-light;
+	color: $color-link;
 }
 
 .sidebar .widget.enews-widget {
@@ -41,4 +41,11 @@
 
 #wpstats {
 	display: none;
+}
+
+/* ## Meta Slider
+--------------------------------------------- */
+
+.metaslider h3 {
+	color: #827d7d;
 }
