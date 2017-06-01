@@ -1481,6 +1481,9 @@ li.comment {
 .footer-widgets p:last-child {
   margin-bottom: 0; }
 
+.footer-widget-area {
+  padding: 10px; }
+
 .footer-widgets-1,
 .footer-widgets-2,
 .footer-widgets-3 {
